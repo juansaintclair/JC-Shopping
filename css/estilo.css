@@ -1,0 +1,312 @@
+/**
+ * @package     Cattive.Site
+ * @subpackage  Templates.cattive
+ *
+ * @copyright   Copyright (C) 2015, Inc. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ */
+
+
+@import url(http://fonts.googleapis.com/css?family=Lato:100,400,700);
+
+
+body {    
+   font-family: 'Lato', sans-serif;
+   font-size: 14px;
+   color: #a5b0b7;
+}
+
+a:hover,
+a:active,
+a:visited,
+a:focus {
+  text-decoration: none!important; 
+}
+
+a:link,
+a:active,
+a:visited
+ {
+  color: #019fe5;
+}
+
+a:hover,
+a:focus
+ {
+  color: #004185;
+}
+
+textarea:focus, input:focus, select:focus, button:focus {
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    outline: 0!important;
+} 
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+
+  
+.cb {
+    clear: both;
+}
+
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace .pace-progress,
+.pace .pace-inactive {
+  background: #4d90fe;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px;
+}
+
+
+
+h1 {
+    color: #403e3e;
+  font-size: 28px;
+}
+
+
+#shopping {
+  border-radius: 3px;
+  border:1px solid #ddd;
+  margin-top: 60px;
+  width: 1024px;
+}
+
+.shopping-topo {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.shopping-topo {
+  height: 45px;
+  border-bottom: 1px dotted #dadad9;
+  line-height: 45px;
+}
+
+.shopping-topo > div > h1 {
+  color: #006699;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.shopping-topo:after,
+.produtos:after,
+#produtos-carousel:after {
+  content:'';
+  display: block;
+  clear: both;
+}
+
+.shopping-topo > .fr > div {
+  display: inline;
+}
+
+
+
+.btn-comparar {
+  margin-top: -3px;
+  background: #009fe1;
+  background-image: -webkit-linear-gradient(top, #009fe1, #0383ad);
+  background-image: -moz-linear-gradient(top, #009fe1, #0383ad);
+  background-image: -ms-linear-gradient(top, #009fe1, #0383ad);
+  background-image: -o-linear-gradient(top, #009fe1, #0383ad);
+  background-image: linear-gradient(to bottom, #009fe1, #0383ad);
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 5px 14px 5px 14px;
+  text-decoration: none;
+  font-weight: bold;
+  -moz-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	-webkit-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+}
+
+.btn-comparar:hover,
+.btn-comparar:focus {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+  color: #FFF;
+  -moz-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	-webkit-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+}
+
+.shopping-topo > .fr > div > input {
+  height: 28px;
+  line-height: 24px;
+  border: 1px solid #d7d7d7;
+  border-radius: 3px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f3f3f3+0,ffffff+100 */
+  background: rgb(243,243,243); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(243,243,243,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(243,243,243,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(243,243,243,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(243,243,243,1) 0%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(243,243,243,1) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(243,243,243,1) 0%,rgba(255,255,255,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+  width: 224px;
+  position: relative;
+  padding-left: 25px;  
+  z-index: 1;
+}
+
+
+div.shopping-topo > div.fr > div:first-child:before {
+    font-family: 'FontAwesome';
+    position: relative;
+    left: 22px;
+    content: "\f002";
+    z-index: 2;
+}
+
+
+.shopping-conteudo > div.links {
+  margin-right: 40px;
+}
+
+.shopping-conteudo > div.links, {
+ padding-top: 10px;
+ padding-bottom: 10px;
+}
+
+.shopping-conteudo > div.links > ul >li:nth-child(11) {
+  margin-top: 30px;
+}
+
+.shopping-conteudo > div.links > ul >li {
+ border-left: 2px solid #FFF;
+ cursor: pointer;
+ padding-left: 12px;
+ padding-top: 6px; 
+}
+
+.shopping-conteudo > div.links > ul >li:hover {
+ border-left: 2px solid #006699;
+ color: #006699;
+}
+
+.shopping-conteudo:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.produtos-item {
+  border-radius: 3px;
+  border:1px solid #f2f2f2;
+  width: 220px;
+  height: 280px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  display: block;
+}
+
+.produtos-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+div.site:before {
+  padding-top: 15px;
+  content:'';
+  display: block;
+}
+
+div.site:after {
+  padding-bottom: 30px;
+  content:'';
+  display: block;
+}
+
+
+.produtos-item > .site {
+  text-align: center; 
+}
+
+.produtos-item > .site > a {
+  color: #838383;
+}
+
+.produtos-item-site-hover {
+   border:1px solid #069;
+   -moz-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	-webkit-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+}
+
+.produtos-item-site-hover .site > a {
+  color: #b8b7b7;
+}
+
+.produtos-item-site-hover .links-produtos > a {
+  color: #149bdf!important;
+}
+
+
+
+#shopping a,
+#shopping a:hover {
+   -moz-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	-webkit-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+}
+
+.produtos-item > a > img {
+  display:block;
+    margin:auto;
+}
+
+.produtos-item .links-produtos  {
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.produtos-item .links-produtos > a {
+  display: block;
+  color: #006699;
+}
+
+
+.produtos-item .links-produtos > a:last-child {
+  font-size: 22px;
+  padding-top: 10px;
+}
+
+
+#produtos-carousel {
+ width: 711px;
+}
